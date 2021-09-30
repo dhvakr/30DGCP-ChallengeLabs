@@ -29,7 +29,7 @@
 
 **Task 2 : Setup the Admin instance**
 
->Stay in kraken-jumphost's SSH, run all below comands
+>Stay in **kraken-jumphost's SSH**, run below comands
 
 ```yaml
 - gcloud config set compute/zone us-east1-b
@@ -55,6 +55,8 @@
 * **Manage notification Channel** > Create a new **Email Channel** 
 
 * Click **Done**
+
+* give alert name as `kraken-admin`
 
 **Task 3: Verify the Spinnaker deployment**
 > Go to cloudshell, run the below commands
@@ -98,3 +100,4 @@
 
 - git push --tags
 ```
+> Wait for some time to spinnaker deployment
