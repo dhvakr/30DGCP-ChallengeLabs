@@ -26,7 +26,7 @@
 3. [Insights from Data with BigQuery](https://github.com/dhvakr/30DGCP-ChallengeLabs/blob/main/Track2-DataScience_ML/3_Insights-from-Data-with-BigQuery.md)
 4. [Engineer Data in Google Cloud](https://github.com/dhvakr/30DGCP-ChallengeLabs/blob/main/Track2-DataScience_ML/4_Engineer-Data-in-Google-Cloud.md)
 5. [Integrate with Machine Learning APIs](https://github.com/dhvakr/30DGCP-ChallengeLabs/blob/main/Track2-DataScience_ML/5_Integrate-with-Machine-Learning-APIs.md)
-6. [Explore Machine Learning Models with Explainable AI: Challenge Lab](https://github.com/dhvakr/30DGCP-ChallengeLabs/blob/main/Track2-DataScience_ML/6_Explore-Machine-Learning-Models-with-ExplainableAI)
+6. [Explore Machine Learning Models with Explainable AI: Challenge Lab](https://github.com/dhvakr/30DGCP-ChallengeLabs/blob/main/Track2-DataScience_ML/6_Explore-Machine-Learning-Models-with-ExplainableAI.md)
 </details>
 
 ## Reference 🖇

@@ -73,7 +73,7 @@
 
 - kubectl create -f k8s/service.yaml
 
-- git merge origin/kurt-dev
+- git merge origin/kurt-dev 
 ```
 > Enter vim editor to increase replicas from 1 to 3
 ```yaml
@@ -100,7 +100,7 @@ kubectl edit deployment valkyrie-dev
 
 - export POD_NAME=$(kubectl get pods --namespace default -l "app.kubernetes.io/component=jenkins-master" -l "app.kubernetes.io/instance=cd" -o jsonpath="{.items[0].metadata.name}")
 
-- kubectl port-forward $POD_NAME 8080:8080 >> /dev/null &
+- kubectl port-forward $POD_NAME 8080:8080 >> /dev/null &   
 
 - printf $(kubectl get secret cd-jenkins -o jsonpath="{.data.jenkins-admin-password}" | base64 --decode);echo
 
@@ -111,6 +111,7 @@ kubectl edit deployment valkyrie-dev
    Username : admin
    Password : {Enter password from which you got from above {printf} command}
 ```
+> Follow the steps to start jenkins
 
 ### Follow the steps below:
 
@@ -131,9 +132,9 @@ kubectl edit deployment valkyrie-dev
 
 - sed -i "s/YOUR_PROJECT/$GOOGLE_CLOUD_PROJECT/g" Jenkinsfile
 
-- git config --global user.email "you@example.com"                  // Email
+- git config --global user.email "you@example.com"                 
 
-- git config --global user.name "student..."                       // Username
+- git config --global user.name "student..."                       
 
 - git add .
 

@@ -74,6 +74,7 @@ Replace `#TODO` with your GCP Project ID
 - ML Runtime version : 2.3
 ```
 > Select Model url > your bucket > saved_complete_model > Select
+
 [Refer]
 ![Model URL](https://user-images.githubusercontent.com/59435839/135580683-1fb01c31-6027-4529-8180-63640aab9f65.png)
 
@@ -87,6 +88,7 @@ Replace `#TODO` with your GCP Project ID
 - ML Runtime version : 2.3
 ```
 > Select Model url > your bucket > saved_limited_model > Select
+
 [Refer]
 ![Model URL](![lm](https://user-images.githubusercontent.com/59435839/135581647-cbad0eac-2daa-4112-af39-f0fd40cb4faa.png))
 
