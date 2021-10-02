@@ -106,7 +106,7 @@ docker ps
 
 - gcloud source repos list
 ```
-> Open Jenkins Web View -> Preview on port 8080
+> Now open Jenkins web view -> Click **`Preview on port 8080`** in cloud shell
 ```yaml
    Username : admin
    Password : {Enter password from which you got from above {printf} command}
@@ -143,4 +143,4 @@ docker ps
 - git push
 ```
 
-*In Jenkins, click Build Pipeline and wait to update the score*
+*In Jenkins, click Build Pipeline and wait untill the build to complete to update the score in qwiklab*
