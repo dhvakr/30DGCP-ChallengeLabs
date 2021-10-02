@@ -57,15 +57,19 @@ limited_model.fit(limited_train_data, limited_train_labels, epochs=10, batch_siz
 
 ### Deploy the models to AI Platform
 
-* Enter the correct information in block 19.
+`Enter the correct information in block 19`
 ```
 Replace `#TODO` with your GCP Project ID
 ```
+
+### Now go to AI platform -> **Models** -> **Create model**
+
+```yaml
+Set model name as: complete_model
 ```
-> Go to AI platform -> Models -> `Create the Complete AI Platform model`:
-> Repeat the above same steps and create another model name as `limited_model`
-```
-> now click **complete_model** -> `create a version`
+Click **Create**
+
+> now click **complete_model** -> **create a version**
 ```yaml
 - Version Name : v1
 - Python version : 3.7
@@ -73,14 +77,24 @@ Replace `#TODO` with your GCP Project ID
 - Framework version : 2.3.1
 - ML Runtime version : 2.3
 ```
-> Select Model url > your bucket > saved_complete_model > Select
+> Select Model url > [ your bucket ] > saved_complete_model > select
 
-[Refer]
+[Refer to select a correct folder]
+
 ![Model URL](https://user-images.githubusercontent.com/59435839/135580683-1fb01c31-6027-4529-8180-63640aab9f65.png)
+
+```
+Leave other fields to default and click save
+```
+### Now again repeat, go to AI platform -> **Models** -> **Create model**
+
+```yaml
+Set model name as: limited_model
+```
+Click **Create**
 
 > now click **limited_model** -> `create a version`
 ```yaml
-- Model Name : complete_model
 - Version Name : v1
 - Python version : 3.7
 - Framework : TensorFlow
@@ -89,9 +103,15 @@ Replace `#TODO` with your GCP Project ID
 ```
 > Select Model url > your bucket > saved_limited_model > Select
 
-[Refer]
-![Model URL](![lm](https://user-images.githubusercontent.com/59435839/135581647-cbad0eac-2daa-4112-af39-f0fd40cb4faa.png))
+[Refer to select a correct folder]
+
+![Model URL](https://user-images.githubusercontent.com/59435839/135581647-cbad0eac-2daa-4112-af39-f0fd40cb4faa.png)
+```
+Leave other fields to default and click > save
+```
+
+> *Wait till the model build*
 
 ### Use the What-If Tool to explore biases
 
-Just run the code for What-If Tool add the WitConfigBuilder code from qwiklab instruction
+Just run the code for What-If Tool add the **WitConfigBuilder** code from qwiklab instruction

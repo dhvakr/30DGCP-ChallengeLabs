@@ -91,7 +91,7 @@ kubectl edit deployment valkyrie-dev
 ```
 > *Press 'i' to edit and change image to "image: gcr.io/YOUR_PROJECT_ID/valkyrie-app:v0.0.2". Press "Esc" --> [type] ":wq" to exit Vim*
 ```yaml
-- docker ps
+docker ps
 ```
 
 **Task 6: Create a pipeline in Jenkins to deploy your app**
