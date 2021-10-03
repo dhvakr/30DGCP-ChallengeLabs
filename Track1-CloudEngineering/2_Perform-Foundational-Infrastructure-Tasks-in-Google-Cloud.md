@@ -8,37 +8,36 @@ There is no CLI instruction for this lab, you have to just use the (GCP UI) for 
 
 **Task 1: Create a bucket**
 ```yaml
-1. Navigation menu > STORAGE > Storage > Create Bucket
+1. Navigation menu > Cloud Storage > Create Bucket
 2. Name your bucket > [ Enter your Project ID ] > Continue
-3. Choose where to store your data > Region: us-east1 4. Continue
-5. Use default values for the remaining
-6. Click Create
+3. Choose where to store your data > Click Region -> Select [ us-east1(South Carolina) ]
+4. Leave all to default and click > Create
 ```
 
 **Task 2: Create a Pub/Sub topic**
 
 ```yaml
-1. Navigation menu > BIG DATA > Pub/Sub
+1. Navigation menu > Pub/Sub
 2. Create Topic > Name: Jooli > Create Topic 
 ```
-> Make sure you remember the topic name, which will be used in Task 3.
+> Make sure you remember the topic name, which will be used in Cloud Function.
 
 **Task 3: Create the Cloud Function**
 ```yaml
 1. In the console, click the Navigation menu > Compute > Cloud Functions
 2. Click Create function
 ```
-|    Field    |     Values                          |
-|  ---------  |    --------                         |
-| Name        | thumbnail                           |
-| Region      | us-east1                            | 
-| Trigger     | Cloud Storage                       |
-| Event type  | Finalize/Create                     |
-| Bucket      | BROWSE > Select the qwiklabs bucket |
- 
+|    Field    |     Values                             |
+|  ---------  |    --------                            |
+| Name        | thumbnail                              |
+| Region      | us-east1                               | 
+| Trigger     | Cloud Storage                          |
+| Event type  | Finalize/Create                        |
+| Bucket      | BROWSE > Select the bucket you created |
  ```yaml
- 3. Keep all default >Click Next
- 4. Select Runtime: Node.js 10
+
+Create the thumbnail Cloud Function
+4. Select Runtime: Node.js 10
     Entry point: thumbnail 
 5. Copy the given in index.js and package.json to the dialog. [Code can be found at (Qwiklab_Page)]
 ```
@@ -51,8 +50,8 @@ There is no CLI instruction for this lab, you have to just use the (GCP UI) for 
  ![](https://storage.googleapis.com/cloud-training/gsp315/map.jpg)
 
 ```yaml
-7. Navigation menu > STORAGE > Storage > Select your bucket > Upload files
-8. Refresh bucket
+7. Now goto your bucket > Upload the downloaded image
+8. Refresh bucket to check
 ```
 
 **Task 4: Remove the previous cloud engineer**

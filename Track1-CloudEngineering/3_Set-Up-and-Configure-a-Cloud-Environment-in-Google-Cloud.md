@@ -39,6 +39,7 @@
 - gcloud sql instances create griffin-dev-db --root-password diva --region=us-east1
 
 - gcloud sql connect griffin-dev-db
+    [ SQL PASSWORD IS ' diva ']
 
 CREATE DATABASE wordpress;
 GRANT ALL PRIVILEGES ON wordpress.* TO "wp_user"@"%" IDENTIFIED BY "stormwind_rules";
