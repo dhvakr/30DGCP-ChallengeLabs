@@ -237,9 +237,7 @@ assert errors == []
 
 In Cloud Shell run the below commands
 ```yaml
-- export GOOGLE_APPLICATION_CREDENTIALS=key.json
-
-- python3 analyze-images.py $DEVSHELL_PROJECT_ID $DEVSHELL_PROJECT_ID
+python3 analyze-images.py $DEVSHELL_PROJECT_ID $DEVSHELL_PROJECT_ID
 ```
 
 **Task 4: Modify the Python script to translate the text using the Translation API**

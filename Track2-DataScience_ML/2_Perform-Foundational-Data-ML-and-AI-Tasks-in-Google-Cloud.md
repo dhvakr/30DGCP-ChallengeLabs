@@ -19,11 +19,11 @@
 
 - cat lab.schema
 ```
-* Now go back to BIGQUERY,  Select **project ID** > click dropdown - lab `dataset` on three dots > Click **Open**
+1. Now go back to BIGQUERY,  Select **project ID** > click dropdown - lab `dataset` on three dots > Click **Open**
 
-* create a table inside the `lab` dataset `[Press the + icon]` and configure it as follows:
+2. create a table inside the `lab` dataset `[Press the + icon]` and configure it as follows:
 
-* Select `Google Cloud Storage` in Create table from dropbox and
+* Select `Google Cloud Storage` in Create table from dropbox
 
 * Paste the below value in GCS bucket :
 ```yaml
@@ -62,7 +62,7 @@ Job name : lab-job
 In DataFlow Template : Select [ Text Files on Cloud Storage to BigQuery ] under "Process Data in Bulk (batch)"
 ```
 > On REQUIRED PARAMETERS: 
-## Make Sure you replace *YOUR_PROJECT* with your *Project ID* in the below url
+### Make Sure you replace *YOUR_PROJECT* with your *Project ID* in the below url
 
 |               Field                   |              Values                    |
 |             ---------                 |             --------                   |
@@ -111,7 +111,7 @@ hdfs dfs -cp gs://cloud-training/gsp323/data.txt /data.txt
 
 **Task 3: Run a simple Dataprep job**
 
-* In Navigation menu > go to **Dataprep** > Accept the terms > Agree and continue > Allow > Login with the same account
+* In Navigation menu > go to **Dataprep** > Accept the terms > `FOLLOW THE SCREEN and agree and allow` > Login with the same account
 
 * On left pane > Cloud Storage > click the pencil > Enter the path as this: `cloud-training/gsp323/runs.csv` > continue
 
@@ -124,8 +124,6 @@ hdfs dfs -cp gs://cloud-training/gsp323/data.txt /data.txt
 **Task 4: AI**
 
 > `open cloud shell run the following commands`
-
-**<u>PART 1</u>**
 
 ```yaml
 - gcloud iam service-accounts create my-natlang-sa \
@@ -144,5 +142,5 @@ hdfs dfs -cp gs://cloud-training/gsp323/data.txt /data.txt
 (Copy the token from the link provided)
 
 - gsutil cp result.json gs://YOUR_PROJECT-marking/task4-cnl.result
-            [ Replace with your project ID]
+      [ Replace with your project ID]
 ```
