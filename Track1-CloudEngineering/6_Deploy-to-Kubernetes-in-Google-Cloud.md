@@ -13,24 +13,17 @@
 - cd valkyrie-app
 
 - cat > Dockerfile <<EOF
-
-- FROM golang:1.10
-
-- WORKDIR /go/src/app
-
-- COPY source .
-
-- RUN go install -v
-
-- ENTRYPOINT ["app","-single=true","-port=8080"]
-
-- EOF
+FROM golang:1.10
+WORKDIR /go/src/app
+COPY source .
+RUN go install -v
+ENTRYPOINT ["app","-single=true","-port=8080"]
+EOF
 
 - docker build -t valkyrie-app:v0.0.1 .
 
 - cd ..
-
-- cd marking
+  cd marking
 
 - ./step1.sh
 ```
@@ -38,14 +31,12 @@
 **Task 2: Test the created Docker image**
 ```yaml 
 - cd ..
-
-- cd valkyrie-app
+  cd valkyrie-app
 
 - docker run -p 8080:8080 valkyrie-app:v0.0.1 &
 
 - cd ..
-
-- cd marking
+  cd marking
 
 - ./step2.sh
 ```
@@ -53,8 +44,7 @@
 **Task 3: Push the Docker image in the Container Repository**
 ```yaml
 - cd ..
-
-- cd valkyrie-app
+  cd valkyrie-app
 
 - docker tag valkyrie-app:v0.0.1 gcr.io/$GOOGLE_CLOUD_PROJECT/valkyrie-app:v0.0.1
 
@@ -79,7 +69,7 @@
 ```yaml
 kubectl edit deployment valkyrie-dev
 ```
-> *Press "i" to get into insert mode and change "replicas" from 1 to 3. Press "Esc" --> [type] ":wq" to exit Vim editor*
+> *Press "i" to get into insert mode and change "replicas" from 1 to 3 in start and end. Press "Esc" --> [type] ":wq" to exit Vim editor*
 
 **Task 5: Update the deployment with a new version of valkyrie-app**
 ```yaml
@@ -89,7 +79,7 @@ kubectl edit deployment valkyrie-dev
 
 - kubectl edit deployment valkyrie-dev
 ```
-> *Press 'i' to edit and change image to "image: gcr.io/YOUR_PROJECT_ID/valkyrie-app:v0.0.2". Press "Esc" --> [type] ":wq" to exit Vim*
+> *Press 'i' to edit and change image to "image: gcr.io/YOUR_PROJECT_ID/valkyrie-app:v0.0.2" in both. Press "Esc" --> [type] ":wq" to exit Vim*
 ```yaml
 docker ps
 ```
@@ -115,24 +105,24 @@ docker ps
 
 ### Follow the steps below:
 
-* Manage Jenkins > Manage Credentials > Global > add credentials > Kind: Google Service Account from metadata > OK
+* On Left Pane > Manage Jenkins > Manage Credentials > Global > add credentials > Kind: Google Service Account from metadata > OK
 
-* Jenkins > New Item -> Name : valkyrie-app > Pipeline > OK
+* Back to DashBoard > On left pane > New Item -> Name : valkyrie-app > select " Pipeline " > OK
 
-* Pipeline > Script: Pipeline script from SCM > SCM: Git
+* Pipeline > Definition: Pipeline script from SCM > SCM: Git
 
 * Repository URL: {Url from previous command} > Credentials: {Project id}
 
 * Apply > Save
 
-> In cloud shell , run below code
+## In cloud shell , run below code
 
 ```yaml
 - sed -i "s/green/orange/g" source/html.go
 
 - sed -i "s/YOUR_PROJECT/$GOOGLE_CLOUD_PROJECT/g" Jenkinsfile
 
-- git config --global user.email "you@example.com"                 
+- git config --global user.email "$(gcloud config get-value account)"                
 
 - git config --global user.name "student..."                       
 

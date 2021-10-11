@@ -9,7 +9,7 @@ gcloud compute firewall-rules delete open-access
 
 **Task 2 : Start the bastion host instance**
 
-> ## Go to Compute Engine and start Bastion instance.
+> ### Go to Compute Engine and start Bastion instance.
 
 **Task 3 : Create a firewall rule that allows SSH (tcp/22) from the IAP service and add network tag on bastion**
 ```yaml
@@ -33,7 +33,7 @@ gcloud compute firewall-rules delete open-access
 ```
 
 **Task 6 : SSH to bastion host via IAP and juice-shop via bastion**
-> In *Compute Engine* > *VM Instances page*, click the *SSH* button for the bastion host.
+> In *Compute Engine* > VM Instances page, click the *SSH* button for the bastion host.
 ```yaml
 ssh [Internal IP address of juice-shop]
 ```

@@ -80,7 +80,7 @@
 
 * Check the production frontend endpoint (use http, not the default https)
 
-* Back to cloudshell, run to push a change
+* Now go to cloudshell, run to push a change
 ---
 ```yaml
 - gcloud config set compute/zone us-east1-b
@@ -88,6 +88,7 @@
 - gcloud source repos clone sample-app
 
 - cd sample-app
+
 - touch a
 
 - git config --global user.email "$(gcloud config get-value account)"

@@ -39,11 +39,14 @@
 - gcloud sql instances create griffin-dev-db --root-password diva --region=us-east1
 
 - gcloud sql connect griffin-dev-db
-    [ SQL PASSWORD IS ' diva ']
 
-CREATE DATABASE wordpress;
-GRANT ALL PRIVILEGES ON wordpress.* TO "wp_user"@"%" IDENTIFIED BY "stormwind_rules";
-FLUSH PRIVILEGES;
+   //info - [ SQL PASSWORD IS ' diva ']
+
+- CREATE DATABASE wordpress;
+
+- GRANT ALL PRIVILEGES ON wordpress.* TO "wp_user"@"%" IDENTIFIED BY "stormwind_rules";
+
+- FLUSH PRIVILEGES;
 ```
 >Type [ exit ] to exit the mysql
 
@@ -80,13 +83,15 @@ password : stormwind_rules
 
 - gcloud iam service-accounts keys create key.json \
     --iam-account=cloud-sql-proxy@$GOOGLE_CLOUD_PROJECT.iam.gserviceaccount.com
+
 - kubectl create secret generic cloudsql-instance-credentials \
     --from-file key.json
 ```
 
 **Task - 7 : Create a WordPress deployment**
-> In editor: wp-deployment.yaml -> replace YOUR_SQL_INSTANCE with "griffin-dev-db" in 42nd line.
-
+```
+In editor: wp-deployment.yaml -> replace YOUR_SQL_INSTANCE with " griffin-dev-db " in 42nd line.
+```
 >Save File
 ```yaml
 - kubectl create -f wp-deployment.yaml
@@ -101,7 +106,9 @@ password : stormwind_rules
 ```yaml
    Title : Wordpress Uptime
       Next > Target
-   Hostname : [Endpoint's address] (without http...)
+   Protocol : HTTP   
+   Resource type : URL   
+   Hostname : [Endpoint's address] (without http.../ Port Number)
    Path : /
       Next -> Next > Create
 ```

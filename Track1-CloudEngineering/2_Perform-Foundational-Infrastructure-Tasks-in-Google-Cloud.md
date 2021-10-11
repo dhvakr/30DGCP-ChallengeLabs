@@ -35,22 +35,24 @@ There is no CLI instruction for this lab, you have to just use the (GCP UI) for 
 | Event type  | Finalize/Create                        |
 | Bucket      | BROWSE > Select the bucket you created |
  ```yaml
+3. Create the thumbnail Cloud Function
 
-Create the thumbnail Cloud Function
-4. Select Runtime: Node.js 10
+    Select Runtime: Node.js 10
     Entry point: thumbnail 
-5. Copy the given in index.js and package.json to the dialog. [Code can be found at (Qwiklab_Page)]
+
+4. Copy the code for index.js and package.json from QwikLab and paste it.
 ```
- [Qwiklab Page](https://google.qwiklabs.com/focuses/10379?parent=catalog#:~:text=const%20topicName%20%3D%20%22MyTopic%22%3B-,index.js%3A,-/*%20globals%20exports%2C%20require)
- > Make sure you replace the text **REPLACE_WITH_YOUR_TOPIC** with the topic you created in task 2, in line 16 of index.js
+[Click here to redirect to copy the codes from (Qwiklab_Page)](https://google.qwiklabs.com/focuses/10379?parent=catalog#:~:text=const%20topicName%20%3D%20%22MyTopic%22%3B-,index.js%3A,-/*%20globals%20exports%2C%20require)
+
+ > Make sure you replace the text **REPLACE_WITH_YOUR_TOPIC** with the topic you created in task 2, in line 15 of index.js
 
  ```yaml
- 6. Download the below image 
+ 5. Download the below image 
  ```
- ![](https://storage.googleapis.com/cloud-training/gsp315/map.jpg)
+ ![Gcloud](https://user-images.githubusercontent.com/59435839/136810796-5825262e-82c4-4301-b9d8-7f0f9c906cc7.jpg)
 
 ```yaml
-7. Now goto your bucket > Upload the downloaded image
+6. Now goto your bucket > Upload the downloaded image
 8. Refresh bucket to check
 ```
 
