@@ -122,7 +122,7 @@ docker ps
 
 - sed -i "s/YOUR_PROJECT/$GOOGLE_CLOUD_PROJECT/g" Jenkinsfile
 
-- git config --global user.email "$(gcloud config get-value account)"                
+- git config --global user.email "sample@gmail.com"                
 
 - git config --global user.name "student..."                       
 
