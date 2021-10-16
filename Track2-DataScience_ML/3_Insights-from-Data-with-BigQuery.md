@@ -290,7 +290,7 @@ FROM
 
   france_cases
 
-LIMIT 1`
+LIMIT 1
 
 )
 
@@ -301,11 +301,11 @@ from summary
 
 **Final Task: Create a Datastudio report**
 
-* Open [DataStudio](https://datastudio.google.com/) as new tab 
+* Open [DataStudio](https://datastudio.google.com/) in new tab 
 > Make sure it logged in with the qwiklabs credentials account, and not with your personal account.
 * Click `Blank report` -> [Simply click --> agree and continue] -> and now click `Blank report` again.
 * In **Add data to Report Window** -> Select BigQuery > Authorize
-* On left bottom > Custom Query > `[ Project ID ]` Enter the following query:
+* On left bottom > Custom Query > `[ Project ID ]` > Enter the following query:
 ```sql
 SELECT
 
@@ -334,4 +334,4 @@ GROUP BY date
 * Click **Add** --> **Add to report**
 
 ---
-> Add chart's to view and explore Datastudio more
+> Add chart's and explore Datastudio  
