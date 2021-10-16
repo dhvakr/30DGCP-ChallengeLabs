@@ -290,7 +290,7 @@ FROM
 
   france_cases
 
-LIMIT 1
+LIMIT 1`
 
 )
 
@@ -299,13 +299,13 @@ select first_day_cases, last_day_cases, days_diff, POW((last_day_cases/first_day
 from summary
 ```
 
-**Create a Datastudio report**
+**Final Task: Create a Datastudio report**
 
 * Open [DataStudio](https://datastudio.google.com/) as new tab 
-> Make sure it logges in with the qwiklabs credentials account, and not your personal account
-* Click Blank `Blank report` -> [Simply agree and continue] -> and Click `Blank report` again.
-* Select BigQuery > Authorize
-* On left pane > Custom Query > `[ Project ID ]` Enter the following query:
+> Make sure it logged in with the qwiklabs credentials account, and not with your personal account.
+* Click `Blank report` -> [Simply click --> agree and continue] -> and now click `Blank report` again.
+* In **Add data to Report Window** -> Select BigQuery > Authorize
+* On left bottom > Custom Query > `[ Project ID ]` Enter the following query:
 ```sql
 SELECT
 
@@ -334,4 +334,4 @@ GROUP BY date
 * Click **Add** --> **Add to report**
 
 ---
-> Add chart's to view  > Explore Datastudio more with the charts
+> Add chart's to view and explore Datastudio more
