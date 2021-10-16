@@ -2,10 +2,6 @@
 
 *lab Link* (GSP3150): https://google.qwiklabs.com/focuses/10379?parent=catalog
 
-```
-There is no CLI instruction for this lab, you have to just use the (GCP UI) for completing this lab.
-```
-
 **Task 1: Create a bucket**
 ```yaml
 1. Navigation menu > Cloud Storage > Create Bucket
@@ -49,7 +45,7 @@ There is no CLI instruction for this lab, you have to just use the (GCP UI) for 
  ```yaml
  5. Download the below image 
  ```
- ![Gcloud](https://user-images.githubusercontent.com/59435839/136810796-5825262e-82c4-4301-b9d8-7f0f9c906cc7.jpg)
+ ![Map](https://storage.googleapis.com/cloud-training/gsp315/map.jpg)
 
 ```yaml
 6. Now goto your bucket > Upload the downloaded image
@@ -60,5 +56,5 @@ There is no CLI instruction for this lab, you have to just use the (GCP UI) for 
 
 ```yaml
 1. Navigation menu > IAM & Admin
-2. Search for the "USERNAME 2" > Edit > Delete Role
+2. Search for the "USERNAME 2" > Click the pencil icon > Delete Role
 ```

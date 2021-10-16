@@ -3,16 +3,16 @@
 *lab Link* (GSP324): https://google.qwiklabs.com/focuses/12011?parent=catalog
 
 **Start a JupyterLab Notebook instance**
-* Storage > Bucket > Create Bucket > Enter **Project ID** as name > CREATE
+* Create a bucket with **Project ID** as name > leave all to default and click **CREATE**
 
-* AI Platform > Notebooks > NEW INSTANCE > select the version of `TensorFlow Enterprise 2.3 Without GPUs` 
+* From navigation bar > AI Platform > **Notebooks** > **NEW INSTANCE** > select the version of `TensorFlow Enterprise 2.3 Without GPUs` 
 
-* Leave all default > CREATE
+* Leave all default > **CREATE**
 
-* Wait for it to be created > click **Open Jupyterlab**
+* Wait for it to be created > and click **Open Jupyterlab**
  
 ## Download the Challenge Notebook
-* In your notebook, click the terminal
+* In your notebook, click the `terminal`
 
 * Clone the repo
 ```yaml
@@ -21,13 +21,13 @@ git clone https://github.com/GoogleCloudPlatform/training-data-analyst
 
 * Go to the enclosing folder: `training-data-analyst/quests/dei`
 
-* Open the notebook file > what-if-tool-challenge.ipynb.
+* On left pane Click --> what-if-tool-challenge.ipynb.
 
-* Download and import the dataset hmda_2017_ny_all-records_labels.
+* `Run each cells` to Download and import the dataset hmda_2017_ny_all-records_labels.
 
 ### Build and train your models
 
-> Modify the block 10 as:
+> Train your first model:
 
 ```python
 model = Sequential() 
@@ -54,14 +54,10 @@ limited_model.compile(loss='mean_squared_error', optimizer='adam', metrics=['acc
 # The data will come from limited_train_data and limited_train_labels.
 limited_model.fit(limited_train_data, limited_train_labels, epochs=10, batch_size=2048, validation_split=0.1)
 ```
-
 ### Deploy the models to AI Platform
-
-`Enter the correct information in block 19`
 ```
-Replace `#TODO` with your GCP Project ID
+Replace `#TODO` with your Project ID
 ```
-
 ### Now go to AI platform -> **Models** -> **Create model**
 
 ```yaml
@@ -79,13 +75,12 @@ Click **Create**
 ```
 > Select Model url > [ your bucket ] > saved_complete_model > select
 
-[Refer to select a correct folder]
+[Refer image to select a correct folder]
 
-![Model URL](https://user-images.githubusercontent.com/59435839/135580683-1fb01c31-6027-4529-8180-63640aab9f65.png)
+![saved_complete_model](https://user-images.githubusercontent.com/59435839/135580683-1fb01c31-6027-4529-8180-63640aab9f65.png)
 
-```
-Leave other fields to default and click save
-```
+### Leave other fields to default and `click > save`
+--
 ### Now again repeat, go to AI platform -> **Models** -> **Create model**
 
 ```yaml
@@ -103,15 +98,10 @@ Click **Create**
 ```
 > Select Model url > your bucket > saved_limited_model > Select
 
-[Refer to select a correct folder]
+[Refer image to select a correct folder]
 
-![Model URL](https://user-images.githubusercontent.com/59435839/135581647-cbad0eac-2daa-4112-af39-f0fd40cb4faa.png)
-```
-Leave other fields to default and click > save
-```
+![saved_limited_model](https://user-images.githubusercontent.com/59435839/135581647-cbad0eac-2daa-4112-af39-f0fd40cb4faa.png)
 
-> *Wait till the model build*
-
-### Use the What-If Tool to explore biases
-
-Just run the code for What-If Tool add the **WitConfigBuilder** code from qwiklab instruction
+### Leave other fields to default and `click > save`
+--
+> *Wait till the model to build*

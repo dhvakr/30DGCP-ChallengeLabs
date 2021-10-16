@@ -2,7 +2,7 @@
 
 *Lab Link* (GSP3150): https://google.qwiklabs.com/focuses/10258?parent=catalog
 
-**Task 1 : Create a project jumphost instance**
+**Task 1: Create a project jumphost instance**
 ```yaml
 gcloud compute instances create nucleus-jumphost \
           --network nucleus-vpc \
@@ -11,7 +11,7 @@ gcloud compute instances create nucleus-jumphost \
           --image-family debian-9  \
           --image-project debian-cloud \
 ```
-**Task 2 : Create a Kubernetes service cluster**
+**Task 2: Create a Kubernetes service cluster**
 ```yaml
 - gcloud container clusters create nucleus-backend \
           --num-nodes 1 \
@@ -29,7 +29,7 @@ gcloud compute instances create nucleus-jumphost \
           --port 8080
 ```
 
-**Task 3 : Set up an HTTP load balancer**
+**Task 3: Set up an HTTP load balancer**
 
 ```yaml
 cat << EOF > startup.sh

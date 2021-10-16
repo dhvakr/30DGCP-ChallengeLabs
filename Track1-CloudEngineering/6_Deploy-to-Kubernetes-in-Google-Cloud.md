@@ -69,7 +69,7 @@ EOF
 ```yaml
 kubectl edit deployment valkyrie-dev
 ```
-> *Press "i" to get into insert mode and change "replicas" from 1 to 3 in start and end. Press "Esc" --> [type] ":wq" to exit Vim editor*
+> *Press "i" to get into insert mode and change "replicas" from 1 to 3 in start and end. Press "Esc" --> [type] " :wq " to exit Vim*
 
 **Task 5: Update the deployment with a new version of valkyrie-app**
 ```yaml
@@ -79,7 +79,7 @@ kubectl edit deployment valkyrie-dev
 
 - kubectl edit deployment valkyrie-dev
 ```
-> *Press 'i' to edit and change image to "image: gcr.io/YOUR_PROJECT_ID/valkyrie-app:v0.0.2" in both. Press "Esc" --> [type] ":wq" to exit Vim*
+> *Press 'i' to edit and change image to "image: gcr.io/YOUR_PROJECT_ID/valkyrie-app:v0.0.2"- Press "Esc" --> [type] " :wq " to exit Vim*
 ```yaml
 docker ps
 ```
@@ -99,7 +99,7 @@ docker ps
 > Now open Jenkins web view -> Click **`Preview on port 8080`** in cloud shell
 ```yaml
    Username : admin
-   Password : {Enter password from which you got from above {printf} command}
+   Password : Enter password, which you got from above [ printf command ] 
 ```
 > Follow the steps to start jenkins
 
@@ -107,15 +107,15 @@ docker ps
 
 * On Left Pane > Manage Jenkins > Manage Credentials > Global > add credentials > Kind: Google Service Account from metadata > OK
 
-* Back to DashBoard > On left pane > New Item -> Name : valkyrie-app > select " Pipeline " > OK
+* Back to DashBoard > On left pane > New Item -> Name : `valkyrie-app` > select " Pipeline " > OK
 
 * Pipeline > Definition: Pipeline script from SCM > SCM: Git
 
-* Repository URL: {Url from previous command} > Credentials: {Project id}
+* Repository URL: { Url from previous command } > Credentials: select { Project id }
 
 * Apply > Save
 
-## In cloud shell , run below code
+### In **cloud shell** , run the following code
 
 ```yaml
 - sed -i "s/green/orange/g" source/html.go

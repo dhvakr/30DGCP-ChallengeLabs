@@ -2,6 +2,8 @@
 
 *lab Link* (GSP327): https://google.qwiklabs.com/focuses/12379?parent=catalog
 
+> On naviagtion menu > BigQuery --> `run below following queries`
+
 **Task 1: Clean your training data**
 ```sql
 CREATE OR REPLACE TABLE

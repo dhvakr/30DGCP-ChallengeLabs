@@ -2,6 +2,8 @@
 
 *lab Link* (GSP787): https://google.qwiklabs.com/focuses/11988?parent=catalog
 
+> On naviagtion menu > BigQuery --> `run below following queries`
+
 **Query 1: Total Confirmed Cases**
 
 ```sql
@@ -299,6 +301,11 @@ from summary
 
 **Create a Datastudio report**
 
+* Open [DataStudio](https://datastudio.google.com/) as new tab 
+> Make sure it logges in with the qwiklabs credentials account, and not your personal account
+* Click Blank `Blank report` -> [Simply agree and continue] -> and Click `Blank report` again.
+* Select BigQuery > Authorize
+* On left pane > Custom Query > `[ Project ID ]` Enter the following query:
 ```sql
 SELECT
 
@@ -320,8 +327,11 @@ WHERE
 
 GROUP BY date
 ```
+[Refer as Image]
+![DataStudio Guide](https://user-images.githubusercontent.com/59435839/137590778-8a302b7c-3c6b-4687-9414-f51de37becb4.png)
 
-* Open EXPLORE DATA
-* Select **Explore with Data Studio**
-* `AUTHORIZE`
-* You can now view the whole chart
+
+* Click **Add** --> **Add to report**
+
+---
+> Add chart's to view  > Explore Datastudio more with the charts

@@ -4,7 +4,7 @@
 
 **Task 1: Create the production environment**
 > Go to Compute Engine > **VM Instances** >  **kraken-jumphost** > Click [ SSH ]
-> Run the following commands in SSH:
+> Run the following commands in [ SSH ]:
 ```yaml
 - cd /work/dm
 
@@ -76,9 +76,7 @@
 
 * Open **Pipelines** and manually run the pipeline if it has not already running.
 
-* Approve the deployment to production.
-
-* Check the production frontend endpoint (use http, not the default https)
+* Approve the deployment to production. [ Check the production frontend endpoint (use http, not the default https) ]
 
 * Now go to cloudshell, run to push a change
 ---

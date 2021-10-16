@@ -99,9 +99,9 @@ In editor: wp-deployment.yaml -> replace YOUR_SQL_INSTANCE with " griffin-dev-db
 ```
 
 **Task - 8 : Enable monitoring**
->Navigation Menu -> Kubernetes Engine > Services and Ingress > Copy Endpoint's address.
+>Navigation Menu -> Kubernetes Engine > Services and Ingress > **COPY Endpoint's address**
 
->Navigation Menu > Monitoring > Uptime Checks > click [ + CREATE UPTIME CHECK ]
+>Navigation Menu > Monitoring > Uptime Checks > click [ `+ CREATE UPTIME CHECK` ]
 
 ```yaml
    Title : Wordpress Uptime
@@ -117,6 +117,6 @@ In editor: wp-deployment.yaml -> replace YOUR_SQL_INSTANCE with " griffin-dev-db
 
 >Navigation Menu > IAM & Admin > IAM > ADD
 ```yaml
-New Member : [Username 2 from Lab instruction page]
+New Member : [ Username 2 from Lab instruction page ]
 Role : Project > Editor
 ```

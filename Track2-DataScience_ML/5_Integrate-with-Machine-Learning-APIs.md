@@ -235,7 +235,7 @@ assert errors == []
 ```
 > Save the file
 
-In Cloud Shell run the below commands
+In `Cloud Shell` run the below commands
 ```yaml
 python3 analyze-images.py $DEVSHELL_PROJECT_ID $DEVSHELL_PROJECT_ID
 ```

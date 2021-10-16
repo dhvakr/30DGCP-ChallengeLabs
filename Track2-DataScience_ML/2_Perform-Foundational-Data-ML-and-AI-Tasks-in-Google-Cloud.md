@@ -142,5 +142,5 @@ hdfs dfs -cp gs://cloud-training/gsp323/data.txt /data.txt
 (Copy the token from the link provided)
 
 - gsutil cp result.json gs://YOUR_PROJECT-marking/task4-cnl.result
-      [ Replace with your project ID]
+      [ Replace with your PROJECT ID]
 ```
