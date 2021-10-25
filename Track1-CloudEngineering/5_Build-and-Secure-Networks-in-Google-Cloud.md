@@ -16,7 +16,7 @@ gcloud compute firewall-rules delete open-access
 
 - gcloud compute instances add-tags bastion --tags=[ SSH IAP network tag ] --zone=us-central1-b
 ```
-> Make sure you change the `SSH IAP network tag` according to your qwiklab instruction
+> Make sure you change the `[ SSH IAP network tag ]` according to your qwiklab instruction
 
 **Task 4 : Create a firewall rule that allows traffic on HTTP (tcp/80) to any address and add network tag on juice-shop**
 ```yaml
@@ -24,7 +24,7 @@ gcloud compute firewall-rules delete open-access
 
 - gcloud compute instances add-tags juice-shop --tags=[ HTTP network tag ] --zone=us-central1-b
 ```
-> Make sure you change the `HTTP network tag` according to your qwiklab instruction
+> Make sure you change the `[ HTTP network tag ]` according to your qwiklab instruction
 
 **Task 5 : Create a firewall rule that allows traffic on SSH (tcp/22) from acme-mgmt-subnet network address and add network tag on juice-shop**
 ```yaml
@@ -32,7 +32,7 @@ gcloud compute firewall-rules delete open-access
 
 - gcloud compute instances add-tags juice-shop --tags=[ SSH internal network tag ] --zone=us-central1-b
 ```
-> Make sure you change the `SSH internal network tag` according to your qwiklab instruction
+> Make sure you change the `[ SSH internal network tag ]` according to your qwiklab instruction
 
 **Task 6 : SSH to bastion host via IAP and juice-shop via bastion**
 > In *Compute Engine* > VM Instances page, click the *SSH* button for the bastion host.

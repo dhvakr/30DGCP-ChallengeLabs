@@ -4,13 +4,15 @@
 
 **Task 1: Create a project jumphost instance**
 ```yaml
-gcloud compute instances create nucleus-jumphost \
+gcloud compute instances create [ Instance name ] \
           --network nucleus-vpc \
           --zone us-east1-b  \
           --machine-type f1-micro  \
           --image-family debian-9  \
           --image-project debian-cloud \
 ```
+> Make sure you change the `[ Instance name ]` according to your qwiklab instruction
+
 **Task 2: Create a Kubernetes service cluster**
 ```yaml
 - gcloud container clusters create nucleus-backend \
@@ -26,8 +28,9 @@ gcloud compute instances create nucleus-jumphost \
 
 - kubectl expose deployment hello-server \
           --type=LoadBalancer \
-          --port 8080
+          --port [ App port number ] 
 ```
+> Make sure you change the `[ App port number ]` according to your qwiklab instruction
 
 **Task 3: Set up an HTTP load balancer**
 
@@ -51,11 +54,14 @@ EOF
           --size 2 \
           --template web-server-template \
           --region us-east1
-
-- gcloud compute firewall-rules create web-server-firewall \
+```
+```yaml
+- gcloud compute firewall-rules create [ Firewall rule ] \
           --allow tcp:80 \
           --network nucleus-vpc
-
+```
+> Make sure you change the `[ Firewall rule ]` to above command ☝ according to your qwiklab instruction
+```yaml
 - gcloud compute http-health-checks create http-basic-check
 
 - gcloud compute instance-groups managed \
@@ -86,3 +92,4 @@ EOF
         
 - gcloud compute forwarding-rules list
 ```
+> wait for some time let web servers to serve on frontend of HTTP(s) Load Balancer.

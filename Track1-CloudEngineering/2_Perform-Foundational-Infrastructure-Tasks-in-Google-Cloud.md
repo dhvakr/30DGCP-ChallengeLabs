@@ -36,7 +36,7 @@
     Select Runtime: Node.js 10
     Entry point: thumbnail 
 
-4. Copy the code for index.js and package.json from QwikLab and paste it.
+4. Copy the code for [ index.js ] and [ package.json ] from QwikLab and paste it.
 ```
 [Click here to redirect to copy the codes from (Qwiklab_Page)](https://google.qwiklabs.com/focuses/10379?parent=catalog#:~:text=const%20topicName%20%3D%20%22MyTopic%22%3B-,index.js%3A,-/*%20globals%20exports%2C%20require)
 
