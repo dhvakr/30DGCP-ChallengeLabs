@@ -12,7 +12,7 @@
 
 ```yaml
 1. Navigation menu > Pub/Sub
-2. Create Topic > Name: Jooli > Create Topic 
+2. Create Topic > Name: diva > Create Topic 
 ```
 > Make sure you remember the topic name, which will be used in Cloud Function.
 
@@ -41,10 +41,10 @@ Now click -> **Save** and Click the `Runtime, build, connections and security se
 ```
 [Click here to redirect to copy the codes from (Qwiklab_Page)](https://google.qwiklabs.com/focuses/10379?parent=catalog#:~:text=const%20topicName%20%3D%20%22MyTopic%22%3B-,index.js%3A,-/*%20globals%20exports%2C%20require)
 
- > Make sure you replace the text **REPLACE_WITH_YOUR_TOPIC** with the topic **Jooli**, in line 15 of **index.js**
+ > Make sure you replace the text **REPLACE_WITH_YOUR_TOPIC** with the topic **diva**, in line 15 of **index.js**
 
  ```yaml
- 5. Download the below image and save as jpg
+ 5. Download the below image
  ```
  ![GCP](https://user-images.githubusercontent.com/59435839/139296274-3b11d33c-8221-485c-99d0-0cd6ea3f2114.jpg)
 
@@ -56,5 +56,5 @@ Now click -> **Save** and Click the `Runtime, build, connections and security se
 
 ```yaml
 1. Navigation menu > IAM & Admin
-2. Search for the "USERNAME 2" > Click the pencil icon > Delete Role
+2. Search for the "USERNAME 2" > Click the pencil icon > Delete Role > Save
 ```
