@@ -92,4 +92,4 @@ EOF
         
 - gcloud compute forwarding-rules list
 ```
-> wait for some time let web servers to serve on frontend of HTTP(s) Load Balancer.
+> Wait for some time to let web servers to serve on frontend of HTTP(s) Load Balancer.

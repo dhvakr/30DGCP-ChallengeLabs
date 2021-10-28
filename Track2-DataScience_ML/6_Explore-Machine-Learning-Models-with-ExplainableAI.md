@@ -12,7 +12,7 @@
 * Wait for it to be created > and click **Open Jupyterlab**
  
 ## Download the Challenge Notebook
-* In your notebook, click the `terminal`
+* In your notebook, click the `Terminal`
 
 * Clone the repo
 ```yaml

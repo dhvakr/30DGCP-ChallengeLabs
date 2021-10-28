@@ -5,7 +5,7 @@
 ## 30 Days Of Google Cloud Challenge Labs
 `Repository Contains 30 Days of Google Cloud program quest [ CloudEngineering/DataScience-MachineLearning ] Challenge Lab Steps`
 
-> **Please try the Challenge labs all by yourself and only take help from here if you really get stuck.
+> **Please try the challenge labs all by yourself and only take help from here if you really get stuck.
 
 <details open>
 <summary><i>Solutions to the <b>Cloud Engineering Track</b></i></summary>
@@ -14,7 +14,7 @@
 2. [Perform Foundational Infrastructure Tasks in Google Cloud: Challenge Lab](https://github.com/dhvakr/30DGCP-ChallengeLabs/blob/main/Track1-CloudEngineering/2_Perform-Foundational-Infrastructure-Tasks-in-Google-Cloud.md)
 3. [Setup and Configure a Cloud Environment in Google Cloud: Challenge Lab](https://github.com/dhvakr/30DGCP-ChallengeLabs/blob/main/Track1-CloudEngineering/3_Set-Up-and-Configure-a-Cloud-Environment-in-Google-Cloud.md)
 4. [Deploy and Manage Cloud Environments with Google Cloud: Challenge Lab](https://github.com/dhvakr/30DGCP-ChallengeLabs/blob/main/Track1-CloudEngineering/4_Deploy-and-Manage-Cloud-Environments-with-Google-Cloud.md)
-5. [Build and Secure Networks in Google Cloud: Challenge Lab](https://github.com/dhvakr/Qwiklab-Challenge-Labs/blob/main/Track1-CloudEngineering/5_Build-and-Secure-Networks-in-Google-Cloud.md)
+5. [Build and Secure Networks in Google Cloud: Challenge Lab](https://github.com/dhvakr/30DGCP-ChallengeLabs/blob/main/Track1-CloudEngineering/5_Build-and-Secure-Networks-in-Google-Cloud.md)
 6. [Deploy to Kubernetes in Google Cloud: Challenge Lab](https://github.com/dhvakr/30DGCP-ChallengeLabs/blob/main/Track1-CloudEngineering/6_Deploy-to-Kubernetes-in-Google-Cloud.md)
 </details>
 
@@ -35,4 +35,3 @@
 * [[Getting Started] Google Cloud Docs](https://cloud.google.com/docs)
 * [Google Cloud Blog](https://cloud.google.com/blog/)
 * [[Article] Migration to Google Cloud Platform (GCP)](https://blog.hike.in/migration-to-google-cloud-platform-gcp-17c397e564b8)
-

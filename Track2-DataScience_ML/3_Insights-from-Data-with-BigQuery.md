@@ -2,7 +2,7 @@
 
 *lab Link* (GSP787): https://google.qwiklabs.com/focuses/11988?parent=catalog
 
-> On naviagtion menu > BigQuery --> `run below following queries`
+> On naviagtion menu > BigQuery --> `run following queries`
 
 **Query 1: Total Confirmed Cases**
 

@@ -8,7 +8,7 @@
 
 * Enter name as your GCP Project ID > Leave others to default > **Create**
 
-> Run the following from the Cloud Shell:
+> Run the following code to the Cloud Shell:
 
 ```yaml
 - bq mk lab
@@ -19,7 +19,7 @@
 
 - cat lab.schema
 ```
-1. Now go back to BIGQUERY,  Select **project ID** > click dropdown - lab `dataset` on three dots > Click **Open**
+1. Now go back to **BIGQUERY**,  Select **project ID** > **Open** `lab` dataset 
 
 2. create a table inside the `lab` dataset `[Press the + icon]` and configure it as follows:
 

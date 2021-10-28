@@ -41,12 +41,15 @@
 - gcloud sql connect griffin-dev-db
 
    //info - [ SQL PASSWORD IS ' diva ']
+```
 
-- CREATE DATABASE wordpress;
+> Paste below query into the cloud shell
 
-- GRANT ALL PRIVILEGES ON wordpress.* TO "wp_user"@"%" IDENTIFIED BY "stormwind_rules";
-
-- FLUSH PRIVILEGES;
+```sql
+CREATE DATABASE wordpress;
+GRANT ALL PRIVILEGES ON wordpress.* TO "wp_user"@"%" IDENTIFIED BY "stormwind_rules";
+FLUSH PRIVILEGES;
+```
 ```
 >Type [ exit ] to exit the mysql
 
@@ -58,7 +61,6 @@
    --machine-type n1-standard-4 \
    --num-nodes 2  \
    --zone us-east1-b
-
 
 - gcloud container clusters get-credentials griffin-dev --zone us-east1-b
 

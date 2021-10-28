@@ -87,11 +87,11 @@
 
 - cd sample-app
 
-- touch a
+- touch diva
 
-- git config --global user.email "$(gcloud config get-value account)"
+- git config --global user.email "sample@gmail.com"
 
-- git config --global user.name "Student"
+- git config --global user.name "student"
 
 - git commit -a -m "change"
 
@@ -99,4 +99,4 @@
 
 - git push --tags
 ```
-> Wait for some time to spinnaker deployment
+> Wait for some time to spinnaker deployment also retry by commiting a change if pipeline fails
